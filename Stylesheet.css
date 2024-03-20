@@ -1,0 +1,89 @@
+.topnav {
+    background-color: #6495ED;
+    overflow: hidden;
+    position: sticky;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: left;
+}
+
+.topnav a {
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    margin: auto;
+}
+
+.topnav a:not(.donate-btn):hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.topnav a.active {
+    background-color: #463fd2;
+    color: #fff;
+    font-style: italic;
+}
+
+
+.donate-btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: yellow;
+    border: 1px solid yellow;
+    border-radius: 30px;
+    padding: 0 20px;
+    margin: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#logo {
+    height: 120px;
+}
+
+.about-heading{
+    font-size: 40px;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+}
+
+.about-section {
+    flex: 1; 
+    max-width: 45%; 
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-items: center;
+    background-color: beige;
+    border: 1px solid beige;
+    border-radius: 30px;
+}
+
+.about-subheading {
+    font-size: 30px; 
+    text-align: center;
+}
+
+.about-section > div {
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.staff-img {
+    padding: 20px;
+}
