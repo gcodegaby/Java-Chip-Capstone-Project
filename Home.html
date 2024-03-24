@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="Stylesheet.css" rel="stylesheet">
 </head>
-
 <header>
     <nav class="topnav">
         <a href="Home.html">
@@ -18,9 +17,26 @@
         <a class="nav-item" href="./Form.html">Form</a>
         <a class="nav-item" href="https://secure.livechatinc.com/licence/8371161/v2/open_chat.cgi?groups=0">Chat</a>
         <div class="donate-btn"><a href="./Donate.html">Donate</a></div>
+        <button class="hamburger-menu">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+            </svg>
+        </button>
     </nav>
 </header>
-
+<div class="hidden mobile-nav-section" id="mobilenav">
+    <nav class="mobilenav">
+        <ul>
+            <li><a class="nav-item" href="./Home.html">Home</a></li>
+            <li><a class="nav-item" href="./About.html">About</a></li>
+            <li><a class="nav-item" href="./Contact.html">Contact</a></li>
+            <li><a class="nav-item" href="./Form.html">Form</a></li>
+            <li><a class="nav-item"
+                    href="https://secure.livechatinc.com/licence/8371161/v2/open_chat.cgi?groups=0">Chat</a></li>
+        </ul>
+    </nav>
 </div>
 <h1>Our Mission</h1>
 <div class="container">
@@ -34,7 +50,6 @@
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
-
     </div>
     <div class="box box3">
         <p>"Domestic violence is the leading cause of injury to women – more than car accidents, muggings, and rapes
@@ -42,7 +57,6 @@
             seconds in the US a woman is assaulted or beaten."</p>
     </div>
 </div>
-
 <h2 id="partners-title">Partners</h2>
 <div class="partners-container">
     <div class="partners-block">
@@ -71,7 +85,6 @@
         <p> Ending Community Homelessness Coalition </p>
     </div>
 </div>
-
 <div class="methods">
     <form method="form" id="newsletterform">
         <div id="box1">
@@ -92,7 +105,8 @@
         <div id="customAlert">
             <p id="alertMessage"></p>
         </div>
-
+        <script src="./newsletter.js"></script>
+        <script src="./Javascript.js"></script>
         </body>
 
 </html>
