@@ -68,9 +68,6 @@
   color: #ffffff;
 }
 
-
-
-
 .donate-btn:hover {
   transform: scale(1.2);
 }
@@ -308,7 +305,9 @@ p{
     background-color: #580586;
     color:#6495ED;
   }
- 
+
+  /*Annabel's Code*/
+
   body{
     font-family: 'Times New Roman', Times, serif;
     background: linear-gradient(#FFFFFF, #6495ED);
@@ -424,6 +423,7 @@ body{
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
 }
+
 *{
 	margin:0;
 	padding:0;
@@ -596,6 +596,4 @@ body{
       width: 100%;
   }
   }
-
-/*Random Test Comment*/ 
   
