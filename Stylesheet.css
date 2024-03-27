@@ -289,7 +289,7 @@ p{
  
   body{
     font-family: 'Times New Roman', Times, serif;
-    background: linear-gradient(#6495ED,#FFFFFF);
+    background: linear-gradient(#FFFFFF, #6495ED);
 }
 .contact-container{
     height: 1000px;
