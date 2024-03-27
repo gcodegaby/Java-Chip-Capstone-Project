@@ -3,7 +3,7 @@
 
 /*Gaby's Css*/
 #logo {
-  height: 120px;
+  height: 150px;
 }
 
 
@@ -309,7 +309,7 @@ p{
     color:#6495ED;
   }
  
-  body{
+  body{ 
     font-family: 'Times New Roman', Times, serif;
     background: linear-gradient(#FFFFFF, #6495ED);
 }
