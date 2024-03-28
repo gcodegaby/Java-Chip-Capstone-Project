@@ -3,7 +3,7 @@
 
 /*Gaby's Css*/
 #logo {
-  height: 150px;
+  height: 120px;
 }
 
 
@@ -177,7 +177,7 @@ display: none;
 /* Boxes */
 
 
-.container {
+.container1 {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
@@ -233,7 +233,7 @@ p{
   font-size: x-large;
 }
  /* Yassa's Newsletter */
- form {
+ #newsletterform {
     width: 100%;
     display: block;
     margin-left: auto;
@@ -309,8 +309,10 @@ p{
     background-color: #580586;
     color:#6495ED;
   }
- 
-  body{ 
+
+
+  /*Annabel's code*/
+  body{
     font-family: 'Times New Roman', Times, serif;
     background: linear-gradient(#FFFFFF, #6495ED);
 }
