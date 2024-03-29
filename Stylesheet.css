@@ -834,29 +834,3 @@ body{
       width: 100%;
   }
   }
-
-  /*Donate CSS*/
-.donate-img {
-    max-width: 350px;
-    margin-left: auto;
-  }
-
-.donate {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    margin: 30px;
-  }
-
-.donate-form {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.donate-text {
-  font-size: 18px;
-  text-align: justify;
-}
