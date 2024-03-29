@@ -103,8 +103,8 @@
   margin: 10px;
   padding: 40px;
   align-items: center;
-  background-color: beige;
-  border: 1px solid beige;
+  background-color: 	#fffec8;
+  border: 1px solid 	#fffec8;
   border-radius: 30px;
   text-align: center;
 }
@@ -120,6 +120,7 @@
   flex-grow: 1;
   overflow-y: auto;
   max-height: 300px;
+  font-size: 15px;
 }
 
 
@@ -678,4 +679,29 @@ body{
       width: 100%;
   }
   }
-  
+
+  /*Donate CSS*/
+.donate-img {
+    max-width: 350px;
+    margin-left: auto;
+  }
+
+.donate {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+  }
+
+.donate-form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.donate-text {
+  font-size: 18px;
+  text-align: justify;
+}
