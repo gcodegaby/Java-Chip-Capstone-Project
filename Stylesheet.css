@@ -254,7 +254,7 @@ p{
  
   .methods{
     display: grid;
-    padding: 40px;
+    padding: 60px;
     margin:30px 1px;
     border-radius: 5px 5px;
     border: solid rgb(158, 140, 237);
@@ -306,18 +306,18 @@ p{
     background-color: #808080;
   }
  
-  input[type="submit"] {
+  #NL-submit {
     margin:0.8rem 0.8rem;
     padding:.5rem 0.5rem;
-    background-color: #580586;
+    background-color: #a671c2;
     color: white;
     border: none;
     border-radius: 5px;
   }
  
-  input[type="submit"]:hover {
-    background-color: #580586;
-    color:#6495ED;
+  #NL-submit:hover {
+    background-color: #c39ada;
+    color:#8e2591;
   }
 
 
