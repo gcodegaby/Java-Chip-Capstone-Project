@@ -834,3 +834,17 @@ body{
       width: 100%;
   }
   }
+
+  #donation-div {
+    display: flex;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .amounts {
+    display: flex;
+    flex-direction: row;
+  }
