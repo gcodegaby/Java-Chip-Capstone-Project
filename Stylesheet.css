@@ -14,7 +14,9 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding-left: 10px;
+  gap: 10px;
 }
 
 
@@ -44,6 +46,7 @@
   transition: all 0.4s;
   flex-direction: row-reverse;
   flex-wrap: wrap;
+  max-height: 60px;
 }
 
 
@@ -67,9 +70,6 @@
 .topnav a.nav-item:not(.donate-btn):hover {
   color: #ffffff;
 }
-
-
-
 
 .donate-btn:hover {
   transform: scale(1.2);
@@ -150,7 +150,7 @@
 display: none;
 }
 
-ul {
+#navb {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -158,7 +158,7 @@ ul {
   background-color: #6495ED;
 }
 
-li a {
+.nav-item1 {
   display: block;
   color: #000;
   padding: 8px 16px;
@@ -168,7 +168,7 @@ li a {
   border: 1px solid #555;
 }
 
-li a:hover {
+.nav-item1:hover {
   background-color: #9e90e0;
   color: white;
 }
@@ -176,7 +176,7 @@ li a:hover {
 /* Boxes */
 
 
-.container {
+.container1 {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
@@ -194,7 +194,7 @@ li a:hover {
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease;
-  padding:5px;
+  /* padding: .5px; */
 }
  .box p {
   color: #0c0c0c;
@@ -203,11 +203,14 @@ li a:hover {
 }
 H1 {
   text-align: center;
+  padding-top: 30px;
 }
- /* Logos */
+
+ /* Yassa's Logos */
  #partners-title{
   text-align: center;
   font-size: 30px;
+  padding: 35px
 }
 #logo-img{
   border-radius: 50%;
@@ -218,7 +221,8 @@ flex-direction: row;
 align-items: center;
 flex-wrap: wrap;
 justify-content: space-around;
-background-color:#e4e2ed;
+padding: 15px;
+/* background-color:#e4e2ed; */
 }
  .partners-block {
 display: flex;
@@ -231,12 +235,16 @@ p{
   text-align: center;
   font-size: x-large;
 }
- /* Newsletter */
- form {
+ /* Yassa's Newsletter */
+ #newsletterform {
     width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .contact-news{
+    font-size: xx-large;
+    padding:30px;
   }
  
   label {
@@ -245,11 +253,13 @@ p{
  
   .methods{
     display: grid;
-    padding: 4rem;
-    margin:2rem auto;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px 2px #954DBC;
+    padding: 40px;
+    margin:30px 1px;
+    border-radius: 5px 5px;
+    border: solid rgb(158, 140, 237);
+    box-shadow: 1px 1px 10px 1px #972ecf;
   }
+
   #box1{
     grid-column-start: 1;
     grid-column-end: 4;
@@ -281,9 +291,9 @@ p{
     border-radius: 10px;
   }
  
-  input[type="button"] {
+  #submit-news {
     padding: 10px 20px;
-    background-color: #580586;
+    background-color: #a586b4;
     color: white;
     border: none;
     cursor: pointer;
@@ -291,7 +301,7 @@ p{
     margin-right: 10px;
   }
  
-  input[type="button"]:hover {
+  #submit-news :hover {
     background-color: #808080;
   }
  
@@ -308,7 +318,9 @@ p{
     background-color: #580586;
     color:#6495ED;
   }
- 
+
+
+  /*Annabel's code*/
   body{
     font-family: 'Times New Roman', Times, serif;
     background: linear-gradient(#FFFFFF, #6495ED);
@@ -378,12 +390,12 @@ p{
 .contact-inputs:focus{
     border: 2px solid #580586;
 }
-#logo{
+/* #logo{
     height: 120px;
     display: flex;
     align-items: center;
     margin: 100px 50px;
-}
+} */
 .contact-left button{
     display: flex;
     align-items: center;
@@ -424,6 +436,7 @@ body{
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
 }
+
 *{
 	margin:0;
 	padding:0;
@@ -511,7 +524,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #000000;
     margin-bottom: 50px;
   }
   
@@ -596,6 +608,4 @@ body{
       width: 100%;
   }
   }
-
-/*Random Test Comment*/ 
   

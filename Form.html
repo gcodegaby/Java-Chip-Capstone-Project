@@ -5,53 +5,88 @@
     <title>Safe Alliance</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="Stylesheet.css" rel="stylesheet">
+    <style>
+        .about-heading {
+            width: 100%;
+            display: flex;
+            padding: 50px;
+            box-sizing: border-box;
+            flex-direction: row;
+        }
+    </style>
 </head>
 
-<header>
-    <nav class="topnav">
+<body>
+    <header>
+        <nav class="topnav">
             <a href="Home.html">
                 <img src="SAFE circle.png" id="logo" alt="Logo">
             </a>
             <a class="nav-item" href="./Home.html">Home</a>
             <a class="nav-item" href="./About.html">About</a>
-            <a class="nav-item" href="./Contact.html">Contact</a>
-            <a class="nav-item" href="./Form.html">Form</a>
-            <a class="nav-item" href="https://secure.livechatinc.com/licence/8371161/v2/open_chat.cgi?groups=0">Chat</a> 
+            <a class="nav-item" href="./Form.html">Contact</a>
+            <a class="nav-item" href="https://secure.livechatinc.com/licence/8371161/v2/open_chat.cgi?groups=0" target="_blank">Chat</a>
             <div class="donate-btn"><a href="./Donate.html">Donate</a></div>
-    </nav>
-</header>
+            <!-- Copy & Paste: START (for nav bar on all pages) -->
+            <button class="hamburger-menu">
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="100" height="20"></rect>
+                    <rect y="30" width="100" height="20"></rect>
+                    <rect y="60" width="100" height="20"></rect>
+                </svg>
+            </button>
+            <!-- Copy & Paste: END (for nav bar on all pages) -->
+        </nav>
+    </header>
+    <!-- Copy & Paste: START (for header on all pages) -->
+    <div class="hidden mobile-nav-section" id="mobilenav">
+        <nav class="mobilenav">
+            <ul>
+                <li><a class="nav-item" href="./Home.html">Home</a></li>
+                <li><a class="nav-item" href="./About.html">About</a></li>
+                <li><a class="nav-item" href="./Form.html">Contact</a></li>
+                <li><a class="nav-item"
+                        href="https://secure.livechatinc.com/licence/8371161/v2/open_chat.cgi?groups=0">Chat</a></li>
+            </ul>
+        </nav>
+    </div>
 
-<body>
-    <section id="contact">
-    <div class="contact-container">
-        <form action="" class="contact-left">
-            <div>
-                <h2 class="contact-title">Contact Us</h2>
-                <hr class="contact-line">
+    <body>
+        <section id="contact">
+            <div class="contact-container">
+                <form action="" class="contact-left">
+                    <div>
+                        <h2 class="contact-title">Contact Us</h2>
+                        <hr class="contact-line">
+                    </div>
+                    <input type="text" name="name" placeholder="First Last" class="contact-inputs" required>
+                    <input type="text" name="email" placeholder="Email" class="contact-inputs" required>
+                    <input type="text" name="Phone" placeholder="Phone Number" class="contact-inputs" required>
+                    <select name=”About” placeholder="About" class="contact-inputs" required>
+                        <option value="" disabled selected>Select reason for reaching out</option>
+                        <option value=”SA”>Sexual Assault</option>
+                        <option value=”DV”>Domestic Violence</option>
+                        <option value=”CA”>Child Abuse</option>
+                        <option value=”ST”>Sex Trafficking</option>
+                        <option value=”Other”>Other</option>
+                    </select>
+                    <textarea name="message" placeholder="Message" class="contact-inputs" required></textarea>
+                    <button type="submit">Submit<button>
+                </form>
+
             </div>
-            <input type="text" name="name" placeholder="First Last" class="contact-inputs" required>
-            <input type="text" name="email" placeholder="Email" class="contact-inputs" required>
-            <input type="text" name="Phone" placeholder="Phone Number" class="contact-inputs" required>
-            <select name=”About” placeholder="About" class="contact-inputs" required>
-                <option value="" disabled selected>Select reason for reaching out</option>
-                <option value=”SA”>Sexual Assault</option>
-                <option value=”DV”>Domestic Violence</option>
-                <option value=”CA”>Child Abuse</option>
-                <option value=”ST”>Sex Trafficking</option>
-                <option value=”Other”>Other</option></select>
-            <textarea name="message" placeholder="Message" class="contact-inputs" required></textarea>
-            <button type="submit">Submit<button>
-        </form>
 
-    </div>
-   
-    <div class="right-container">
-        <h3 class="right-title">Reach out to our team !</h3>
-        <br>
-        <div>Our mission at SAFE is to provide support, advocacy, and assistance to survivors of abuse. Whether you need someone to talk to, guidance on your next steps, or resources for healing, we are here for you. Please don't hesitate to fill out the adjoining form for a prompt response from our dedicated team. Additionally, we offer 24-hour assistance; you can call us anytime at our 24-hour SAFEline (512)267-SAFE[7233]. Your well-being is our priority, and we're committed to standing by you every step of the way.</div>
-    </div>
-</section>
+            <div class="right-container">
+                <h3 class="right-title">Reach out to our team !</h3>
+                <br>
+                <div>Our mission at SAFE is to provide support, advocacy, and assistance to survivors of abuse. Whether
+                    you need someone to talk to, guidance on your next steps, or resources for healing, we are here for
+                    you. Please don't hesitate to fill out the adjoining form for a prompt response from our dedicated
+                    team. Additionally, we offer 24-hour assistance; you can call us anytime at our 24-hour SAFEline
+                    (512)267-SAFE[7233]. Your well-being is our priority, and we're committed to standing by you every
+                    step of the way.</div>
+            </div>
+        </section>
+    </body>
 
-</body>
 </html>
-<footer>PLEASE WORK</footer>
