@@ -30,4 +30,5 @@ if (firstname.value.length <= 2 ||lastname.value.length <= 2 ) {
     lastname.value = "";
     email.value = "";
 }
+
 });
