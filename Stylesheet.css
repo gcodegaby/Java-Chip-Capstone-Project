@@ -665,6 +665,7 @@ body{
     -o-transition: left 0.15s ease-out;
     transition: left 0.15s ease-out;
   }
+  
   /*responsive*/
   @media(max-width: 767px){
     .footer-col{
