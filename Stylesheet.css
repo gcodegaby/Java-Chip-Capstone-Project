@@ -103,8 +103,8 @@
   margin: 10px;
   padding: 40px;
   align-items: center;
-  background-color: beige;
-  border: 1px solid beige;
+  background-color: 	#fffec8;
+  border: 1px solid 	#fffec8;
   border-radius: 30px;
   text-align: center;
 }
@@ -120,6 +120,7 @@
   flex-grow: 1;
   overflow-y: auto;
   max-height: 300px;
+  font-size: 15px;
 }
 
 
@@ -595,7 +596,76 @@ body{
     margin: 20px auto;
   
   }
+  /*Mercy's CSS*/
   
+  .switch {
+    position: absolute;
+    /* top: 190px;
+    left: 15px; */
+    margin: 20px auto;
+    height: 26px;
+    width: 30%;
+    background: white;
+    border-radius: 3px;
+  }
+  
+  .switch-label {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 49%;
+    line-height: 26px;
+    font-size: 11px;
+    color: #5C5C5C;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .switch-label:active {
+    font-weight: bold;
+  }
+  
+  .switch-label-off {
+    padding-left: 2px;
+  }
+  
+  .switch-label-on {
+    padding-right: 2px;
+  }
+  
+  .switch-input {
+    display: none;
+  }
+  .switch-input:checked + .switch-label {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.65);
+    
+    -webkit-transition: 0.15s ease-out;
+    -moz-transition: 0.15s ease-out;
+    -o-transition: 0.15s ease-out;
+    transition: 0.15s ease-out;
+  }
+  .switch-input:checked + .switch-label-on ~ .switch-selection {
+    left: 114px;
+  }
+  
+  .switch-selection {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    left: 2px;
+    width: 49%;
+    height: 22px;
+    background: #954DBC;
+    border-radius: 3px;
+    background-color: #954DBC;
+    
+    -webkit-transition: left 0.15s ease-out;
+    -moz-transition: left 0.15s ease-out;
+    -o-transition: left 0.15s ease-out;
+    transition: left 0.15s ease-out;
+  }
   /*responsive*/
   @media(max-width: 767px){
     .footer-col{
@@ -608,4 +678,29 @@ body{
       width: 100%;
   }
   }
-  
+
+  /*Donate CSS*/
+.donate-img {
+    max-width: 350px;
+    margin-left: auto;
+  }
+
+.donate {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+  }
+
+.donate-form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.donate-text {
+  font-size: 18px;
+  text-align: justify;
+}
