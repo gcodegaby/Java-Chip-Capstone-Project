@@ -195,7 +195,7 @@ display: none;
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease;
-  padding:5px;
+  /* padding: .5px; */
 }
  .box p {
   color: #0c0c0c;
@@ -204,11 +204,14 @@ display: none;
 }
 H1 {
   text-align: center;
+  padding-top: 30px;
 }
+
  /* Yassa's Logos */
  #partners-title{
   text-align: center;
   font-size: 30px;
+  padding: 35px
 }
 #logo-img{
   border-radius: 50%;
@@ -219,7 +222,8 @@ flex-direction: row;
 align-items: center;
 flex-wrap: wrap;
 justify-content: space-around;
-background-color:#e4e2ed;
+padding: 15px;
+/* background-color:#e4e2ed; */
 }
  .partners-block {
 display: flex;
@@ -239,6 +243,10 @@ p{
     margin-left: auto;
     margin-right: auto;
   }
+  .contact-news{
+    font-size: xx-large;
+    padding:30px;
+  }
  
   label {
     color: black;
@@ -246,11 +254,13 @@ p{
  
   .methods{
     display: grid;
-    padding: 4rem;
-    margin:2rem auto;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px 2px #954DBC;
+    padding: 40px;
+    margin:30px 1px;
+    border-radius: 5px 5px;
+    border: solid rgb(158, 140, 237);
+    box-shadow: 1px 1px 10px 1px #972ecf;
   }
+
   #box1{
     grid-column-start: 1;
     grid-column-end: 4;
@@ -282,9 +292,9 @@ p{
     border-radius: 10px;
   }
  
-  input[type="button"] {
+  #submit-news {
     padding: 10px 20px;
-    background-color: #580586;
+    background-color: #a586b4;
     color: white;
     border: none;
     cursor: pointer;
@@ -292,7 +302,7 @@ p{
     margin-right: 10px;
   }
  
-  input[type="button"]:hover {
+  #submit-news :hover {
     background-color: #808080;
   }
  
@@ -515,7 +525,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #000000;
     margin-bottom: 50px;
   }
   
