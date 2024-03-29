@@ -596,13 +596,83 @@ body{
     margin: 20px auto;
   
   }
-  /*Mercy's CSS*/
+  /* Mercy's CSS
+   /*Mercy's CSS*/
+
+   .switch {
+    position: absolute;
+    /* top: 190px;
+    left: 15px; */
+    margin: 20px auto;
+    height: 26px;
+    width: 30%;
+    background: white;
+    border-radius: 3px;
+  }
+
+  .switch-label {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 49%;
+    line-height: 26px;
+    font-size: 11px;
+    color: #5C5C5C;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .switch-label:active {
+    font-weight: bold;
+  }
+
+  .switch-label-off {
+    padding-left: 2px;
+  }
+
+  .switch-label-on {
+    padding-right: 2px;
+  }
+
+  .switch-input {
+    display: none;
+  }
+  .switch-input:checked + .switch-label {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.65);
+
+    -webkit-transition: 0.15s ease-out;
+    -moz-transition: 0.15s ease-out;
+    -o-transition: 0.15s ease-out;
+    transition: 0.15s ease-out;
+  }
+  .switch-input:checked + .switch-label-on ~ .switch-selection {
+    left: 114px;
+  }
+
+  .switch-selection {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    left: 2px;
+    width: 49%;
+    height: 22px;
+    background: #954DBC;
+    border-radius: 3px;
+    background-color: #954DBC;
+
+    -webkit-transition: left 0.15s ease-out;
+    -moz-transition: left 0.15s ease-out;
+    -o-transition: left 0.15s ease-out;
+    transition: left 0.15s ease-out;
+  }
   
   .switch {
     position: absolute;
     /* top: 190px;
     left: 15px; */
-    margin: 20px auto;
+    /* margin: 20px auto;
     height: 26px;
     width: 30%;
     background: white;
@@ -665,7 +735,7 @@ body{
     -moz-transition: left 0.15s ease-out;
     -o-transition: left 0.15s ease-out;
     transition: left 0.15s ease-out;
-  }
+  } */ */
   
   /*responsive*/
   @media(max-width: 767px){
