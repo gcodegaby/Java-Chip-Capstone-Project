@@ -1,6 +1,5 @@
 /*@media screen and (max-width: 700px)*/
 /*Donation Page CSS*/
-
 #donation-div {
   display: flex;
   gap: 20px;
@@ -35,6 +34,10 @@ form {
   text-align: justify;
   padding: 24px;
 }
+
+
+
+
 /*Gaby's Css*/
 #logo {
   height: 120px;
