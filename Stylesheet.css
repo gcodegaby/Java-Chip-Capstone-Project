@@ -3,6 +3,7 @@
 
 #donation-div {
   display: flex;
+  gap: 20px;
 }
 
 form {
@@ -16,9 +17,20 @@ form {
 
 .donation-img {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  padding: 20px;
+}
+.donate-form-btn {
+  background-color: yellow;
+  border-radius: 10px;
+  padding: 24px;
 }
 
+.donation-text {
+  text-align: justify;
+}
 /*Gaby's Css*/
 #logo {
   height: 120px;
