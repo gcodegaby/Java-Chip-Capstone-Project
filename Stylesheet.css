@@ -36,6 +36,11 @@ form {
   padding: 24px;
 }
 
+.col-50 {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+}
 
 /*Gaby's Css*/
 #logo {
@@ -860,15 +865,15 @@ body{
   
   /*responsive*/
   @media(max-width: 767px){
-    .footer-col{
+    .footer-col {
       width: 50%;
       margin-bottom: 30px;
-  }
+    }
   }
   @media(max-width: 574px){
     .footer-col{
       width: 100%;
-  }
+    }
   }
 
 
