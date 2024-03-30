@@ -80,6 +80,14 @@
                         <input type="text" id="pnumber" placeholder="Phone Number"> </input>
                         <input type="text" id="company" placeholder="Company"> </input>
                     </div>
+                    <div class="switch">
+                        <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time"
+                            checked="">
+                        <label for="one-time" class="switch-label switch-label-off">One-Time</label>
+                        <input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
+                        <label for="monthly" class="switch-label switch-label-on">Monthly</label>
+                        <span class="switch-selection"></span>
+                    </div>
                     <div class="amounts">
                         <label for="Number">
                             <input type="radio" id="5" name="Number" value="5">$5</label>
@@ -105,14 +113,6 @@
                         <div>
                             <label for="amount">Donation amount</label>
                             <input type="text" id="amount" name="amount">
-                        </div>
-                        <div class="switch">
-                            <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time"
-                                checked="">
-                            <label for="one-time" class="switch-label switch-label-off">One-Time</label>
-                            <input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
-                            <label for="monthly" class="switch-label switch-label-on">Monthly</label>
-                            <span class="switch-selection"></span>
                         </div>
                         <div class="col-50">
                             <h3>Payment</h3>

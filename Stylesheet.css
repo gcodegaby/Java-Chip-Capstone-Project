@@ -9,6 +9,7 @@ form {
   display: flex;
   flex-direction: row;
 }
+
 .amounts {
   display: flex;
   flex-direction: row;
@@ -34,8 +35,6 @@ form {
   text-align: justify;
   padding: 24px;
 }
-
-
 
 
 /*Gaby's Css*/
@@ -729,6 +728,7 @@ body{
     width: 30%;
     background: white;
     border-radius: 3px;
+    margin-top: -20px;
   }
 
   .switch-label {
@@ -789,8 +789,8 @@ body{
     transition: left 0.15s ease-out;
   }
   
-  .switch {
-    position: absolute;
+  /* .switch {
+    position: absolute; */
     /* top: 190px;
     left: 15px; */
     /* margin: 20px auto;
