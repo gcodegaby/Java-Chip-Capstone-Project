@@ -10,7 +10,7 @@
             width: 100%;
             display: flex;
             padding: 50px;
-            box-sizing: boarder-box;
+            box-sizing: border-box;
             flex-direction: row;
         }
     </style>
@@ -24,7 +24,8 @@
             </a>
             <a class="nav-item" href="./Home.html">Home</a>
             <a class="nav-item" href="./About.html">About</a>
-            <a class="nav-item" href="./Form.html">Contact</a>
+            <a class="nav-item" href="./Contact.html">Contact</a>
+            <a class="nav-item" href="./Form.html">Form</a>
             <a class="nav-item" href="https://secure.livechatinc.com/licence/8371161/v2/open_chat.cgi?groups=0"
                 target="_blank">Chat</a>
             <div class="donate-btn"><a href="./Donate.html">Donate</a></div>
@@ -45,55 +46,81 @@
             <ul id="navb">
                 <li><a class="nav-item1" href="./Home.html">Home</a></li>
                 <li><a class="nav-item1" href="./About.html">About</a></li>
-                <li><a class="nav-item1" href="./Form.html">Contact</a></li>
+                <li><a class="nav-item1" href="./Contact.html">Contact</a></li>
+                <li><a class="nav-item1" href="./Form.html">Form</a></li>
                 <li><a class="nav-item1"
                         href="https://secure.livechatinc.com/licence/8371161/v2/open_chat.cgi?groups=0">Chat</a></li>
             </ul>
         </nav>
     </div>
 
+    <!--Donation Form Code-->
     <h1>Your generosity goes so far</h1>
     <div id="donation-div">
         <div>
-        <h4><i>Your gift will provide emergency shelter for children, adults, and families, and ensure 24/7 SAFEline support
-            is available. It will help fund counseling, legal services, resources for parents, wraparound support for
-            kids, and much more. Thank you for partnering with us!</i></h4>
-        <img src="https://www.safeaustin.org/wp-content/uploads/2018/07/Feature_image_Parentingtips.png" alt="staff"
-            class="donation-img" width="300px">
-    <!--Donation Form Code-->
-    <form role='donation_form'>
-        <div class="donation-container">
-            <div class="donation-box">
-                <div class="title">Donation Information</div>
-                <div class="fields">
+            <img src="https://www.safeaustin.org/wp-content/uploads/2018/07/Feature_image_Parentingtips.png" alt="staff"
+                class="donation-img" width="300px">
+            <h4><i>Your gift will provide emergency shelter for children, adults, and families, and ensure 24/7 SAFEline
+                    support is available. It will help fund counseling, legal services, resources for parents,
+                    wraparound support for kids, and much more. Thank you for partnering with us!</i></h4>
+        </div>
+        <form role='donation_form'>
+            <div class="donation-container">
+                <div class="donation-box">
                     <br>
-                    <input type="text" id="firstName" placeholder="First Name"> </input>
-                    <input type="text" id="lastName" placeholder="Last Name"> </input>
-                    <input type="text" id="email" placeholder="Email"> </input>
-                    <input type="text" id="pnumber" placeholder="Phone Number"> </input>
-                    <input type="text" id="company" placeholder="Company"> </input>
-                    <br>
-                    <label for="subject">What inspired your gift today?</label><br>
-                    <textarea name="the-textarea" id="the-textarea" cols="80" rows="2" maxlength="255"
-                        autofocus></textarea>
-                    <div id="the-count">
-                        <span id="current">0</span>
-                        <span id="maximum">/ 300</span>
+                    <div class="title">Donation Information</div>
+                    <div class="fields">
+                        <br>
+                        <input type="text" id="firstName" placeholder="First Name"> </input>
+                        <input type="text" id="lastName" placeholder="Last Name"> </input>
+                        <input type="text" id="email" placeholder="Email"> </input>
+                        <input type="text" id="pnumber" placeholder="Phone Number"> </input>
+                        <input type="text" id="company" placeholder="Company"> </input>
                     </div>
-                    <br>
-                    <div class="switch">
-                        <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
-                        <label for="one-time" class="switch-label switch-label-off">One-Time</label>
-                        <input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
-                        <label for="monthly" class="switch-label switch-label-on">Monthly</label>
-                        <span class="switch-selection"></span>
+                    <div class="amounts">
+                        <label for="Number">
+                            <input type="radio" id="5" name="Number" value="5">$5</label>
+                        <label for="Number">
+                            <input type="radio" id="10" name="Number" value="10">$10</label>
+                        <label for="Number">
+                            <input type="radio" id="25" name="Number" value="25">$25</label>
+                        <label for="Number">
+                            <input type="radio" id="50" name="Number" value="50">$50</label>
+                        <label for="Number">
+                            <input type="radio" id="75" name="Number" value="75">$75</label>
+                        <label for="Number">
+                            <input type="radio" id="100" name="Number" value="100">$100</label>
+                    </div>
+                    <div id="textarea-donate">
+                        <label for="subject">What inspired your gift today?
+                            <textarea name="the-textarea" id="the-textarea" cols="80" rows="2" maxlength="255"
+                                autofocus></textarea></label>
+                        <div id="the-count">
+                            <span id="current">0</span>
+                            <span id="maximum">/ 300</span>
+                        </div>
+                        <div>
+                            <label for="amount">Donation amount</label>
+                            <input type="text" id="amount" name="amount">
+                        </div>
+                        <div>
+                            <button type="submit" class="donate-form-btn">
+                                <span>Donate and support</span>
+                            </button>
+                        </div>
+                        <div class="switch">
+                            <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time"
+                                checked="">
+                            <label for="one-time" class="switch-label switch-label-off">One-Time</label>
+                            <input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
+                            <label for="monthly" class="switch-label switch-label-on">Monthly</label>
+                            <span class="switch-selection"></span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </form>
+        </form>
     </div>
-
     <!--Donation Form Code-->
     <!-- <section class="donate" id="donate">
     <div>

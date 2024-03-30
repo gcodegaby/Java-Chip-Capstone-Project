@@ -1,11 +1,28 @@
 /*@media screen and (max-width: 700px)*/
+/*Donation Page CSS*/
 
+#donation-div {
+  display: flex;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+}
+.amounts {
+  display: flex;
+  flex-direction: row;
+}
+
+.donation-img {
+  display: flex;
+  justify-content: flex-end;
+}
 
 /*Gaby's Css*/
 #logo {
   height: 120px;
 }
-
 
 .topnav {
   background-color: #6495ED;
@@ -156,7 +173,7 @@ display: none;
   margin: 0;
   padding: 0;
   width: 305px;
-  background-color: #6495ed;
+  background-color: #6495ED;
 }
 
 .nav-item1 {
@@ -835,16 +852,5 @@ body{
   }
   }
 
-  #donation-div {
-    display: flex;
-  }
+
   
-  form {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .amounts {
-    display: flex;
-    flex-direction: row;
-  }
