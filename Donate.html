@@ -10,7 +10,7 @@
             width: 100%;
             display: flex;
             padding: 50px;
-            box-sizing: boarder-box;
+            box-sizing: border-box;
             flex-direction: row;
         }
     </style>
@@ -26,7 +26,8 @@
             <a class="nav-item" href="./About.html">About</a>
             <a class="nav-item" href="./Contact.html">Contact</a>
             <a class="nav-item" href="./Form.html">Form</a>
-            <a class="nav-item" href="https://secure.livechatinc.com/licence/8371161/v2/open_chat.cgi?groups=0" target="_blank">Chat</a>
+            <a class="nav-item" href="https://secure.livechatinc.com/licence/8371161/v2/open_chat.cgi?groups=0"
+                target="_blank">Chat</a>
             <div class="donate-btn"><a href="./Donate.html">Donate</a></div>
             <!-- Copy & Paste: START (for nav bar on all pages) -->
             <button class="hamburger-menu">
@@ -42,56 +43,84 @@
     <!-- Copy & Paste: START (for header on all pages) -->
     <div class="hidden mobile-nav-section" id="mobilenav">
         <nav class="mobilenav">
-            <ul>
-                <li><a class="nav-item" href="./Home.html">Home</a></li>
-                <li><a class="nav-item" href="./About.html">About</a></li>
-                <li><a class="nav-item" href="./Contact.html">Contact</a></li>
-                <li><a class="nav-item" href="./Form.html">Form</a></li>
-                <li><a class="nav-item"
+            <ul id="navb">
+                <li><a class="nav-item1" href="./Home.html">Home</a></li>
+                <li><a class="nav-item1" href="./About.html">About</a></li>
+                <li><a class="nav-item1" href="./Contact.html">Contact</a></li>
+                <li><a class="nav-item1" href="./Form.html">Form</a></li>
+                <li><a class="nav-item1"
                         href="https://secure.livechatinc.com/licence/8371161/v2/open_chat.cgi?groups=0">Chat</a></li>
             </ul>
         </nav>
     </div>
-    <h1>Your generosity goes so far</h1>
-    <h4><i>Your gift will provide emergency shelter for children, adults, and families, and ensure 24/7 SAFEline support is available. It will help fund counseling, legal services, resources for parents, wraparound support for kids, and much more. Thank you for partnering with us!</i></h4>
-    <div><img
-        src="https://www.safeaustin.org/wp-content/uploads/2018/07/Feature_image_Parentingtips.png"
-        alt="staff" class="donation-img" width="300px"></div>
-    </div>
-<!--Donation Form Code-->
-<form role='donation_form'>
-    <div class="donation-container">
-        <div class="donation-box">
-            <br>
-            <div class="title">Donation Information</div>
-            <div class="fields">
-            <br>
-            <input type="text" id="firstName" placeholder="First Name"> </input>
-            <input type="text" id="lastName" placeholder="Last Name"> </input>
-            <input type="text" id="email" placeholder="Email"> </input>
-            <input type="text" id="pnumber" placeholder="Phone Number"> </input>
-            <input type="text" id="company" placeholder="Company"> </input>
-            <br>
-        <label for="subject">What inspired your gift today?</label><br>
-        <textarea name="the-textarea" id="the-textarea" cols="80" rows="2" maxlength="255"autofocus></textarea>
-          <div id="the-count">
-                <span id="current">0</span>
-                <span id="maximum">/ 300</span>
-            </div>
-        <br>
-        <div class="switch">
-            <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
-            <label for="one-time" class="switch-label switch-label-off">One-Time</label>
-            <input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
-            <label for="monthly" class="switch-label switch-label-on">Monthly</label>
-            <span class="switch-selection"></span>
-        </div>
-            </div>
-        </div>
-    </div>
-    </form>
+
     <!--Donation Form Code-->
-<!-- <section class="donate" id="donate">
+    <h1>Your generosity goes so far</h1>
+    <div id="donation-div">
+        <div>
+            <img src="https://images.pexels.com/photos/6393377/pexels-photo-6393377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="staff"
+                class="donation-img">
+            <p class="donation-text"><i>Your gift will provide emergency shelter for children, adults, and families, and ensure 24/7 SAFEline
+                    support is available. It will help fund counseling, legal services, resources for parents,
+                    wraparound support for kids, and much more. Thank you for partnering with us!</i></p>
+        </div>
+        <form role='donation_form'>
+            <div class="donation-container">
+                <div class="donation-box">
+                    <div class="title">Donation Information</div>
+                    <div class="fields">
+                        <input type="text" id="firstName" placeholder="First Name"> </input>
+                        <input type="text" id="lastName" placeholder="Last Name"> </input>
+                        <input type="text" id="email" placeholder="Email"> </input>
+                        <input type="text" id="pnumber" placeholder="Phone Number"> </input>
+                        <input type="text" id="company" placeholder="Company"> </input>
+                    </div>
+                    <div class="amounts">
+                        <label for="Number">
+                            <input type="radio" id="5" name="Number" value="5">$5</label>
+                        <label for="Number">
+                            <input type="radio" id="10" name="Number" value="10">$10</label>
+                        <label for="Number">
+                            <input type="radio" id="25" name="Number" value="25">$25</label>
+                        <label for="Number">
+                            <input type="radio" id="50" name="Number" value="50">$50</label>
+                        <label for="Number">
+                            <input type="radio" id="75" name="Number" value="75">$75</label>
+                        <label for="Number">
+                            <input type="radio" id="100" name="Number" value="100">$100</label>
+                    </div>
+                    <div id="textarea-donate">
+                        <label for="subject">What inspired your gift today?
+                            <textarea name="the-textarea" id="the-textarea" cols="70" rows="2" maxlength="100"
+                                autofocus></textarea></label>
+                        <div id="the-count">
+                            <span id="current">0</span>
+                            <span id="maximum">/ 300</span>
+                        </div>
+                        <div>
+                            <label for="amount">Donation amount</label>
+                            <input type="text" id="amount" name="amount">
+                        </div>
+                        <div>
+                            <button type="submit" class="donate-form-btn">
+                                <span>Donate and support</span>
+                            </button>
+                        </div>
+                        <div class="switch">
+                            <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time"
+                                checked="">
+                            <label for="one-time" class="switch-label switch-label-off">One-Time</label>
+                            <input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
+                            <label for="monthly" class="switch-label switch-label-on">Monthly</label>
+                            <span class="switch-selection"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--Donation Form Code-->
+    <!-- <section class="donate" id="donate">
     <div>
         <p class="donate-text">Your donation can change lives. By supporting our non-profit 
             organization, you're offering hope, healing, and a path to a brighter future for survivors. 
@@ -108,69 +137,69 @@
     </div>
 </div>
 </form> -->
-<!--Donation Form Code-->
-<!--Footer Code-->
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="footer-col">
-                <img src="SAFE.png" id="footer-img1">
-                <br>
-                <ul>
-                    <li>The SAFE Alliance</li>
-                    <li>P.O. Box 19454, Austin, TX 78760</li>
-                    <li>For Administrative needs Call: <a href="tel:+15123695900"> (512) 369-5900</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4> The Safe Alliance </h4>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Form</a></li>
-                    <li><a href="#">Chat</a></li>
-                    <li><a href="#">Donate</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>24/7 SAFEline</h4>
-                <ul>
-                    <li>Call:<a href="tel:+15122677233">(512) 267-7233</a></li>
-                    <li>Text: Text “SAFE” to <a href="sms:+17378887233">(737) 888-7233</a> visit our page
-                        for Privacy Policy, Msg & Data Rates may apply. Msg frequency may vary. Text STOP to
-                        opt out.</a></li>
-                    <li>For Deaf, DeafBlind, DeafDisabled, and Hard of Hearing people: please use relay/VRS
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>The SAFE Newsletter</h4>
-                <form>
-                    <i class="far fa-envelope"></i>
-                    <input type="email" placeholder="Enter Email" required />
-                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
-                </form>
-                <div class="social-icons">
-                    <h4>Follow Us</h4>
-                    <div class="social-links"></div>
-                    <a href="https://www.facebook.com/SAFEatx"><i class="fab fa-facebook-f"></i></a>
-                    <!--<a href="#"><i class="fab fa-facebook-f"></i></a> -->
-                    <a href="https://twitter.com/SAFEatx"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/company/safeatx/"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/safeatx/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/channel/UCibYuEbxH5Dq_upcsVCiE7A"><i
-                            class="fab fa-youtube"></i></a>
-                    <a href="https://www.tiktok.com/@safeatx?lang=en"><i class="fab fa-tiktok"></i></a>
+    <!--Donation Form Code-->
+    <!--Footer Code-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <img src="SAFE circle.png" id="footer-img1">
+                    <br>
+                    <ul>
+                        <li>The SAFE Alliance</li>
+                        <li>P.O. Box 19454, Austin, TX 78760</li>
+                        <li>For Administrative needs Call: <a href="tel:+15123695900"> (512) 369-5900</a></li>
+                    </ul>
                 </div>
-                <div>
-                    <img src="SEAL.png" id="footer-img2">
+                <div class="footer-col">
+                    <h4> The Safe Alliance </h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Form</a></li>
+                        <li><a href="#">Chat</a></li>
+                        <li><a href="#">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>24/7 SAFEline</h4>
+                    <ul>
+                        <li>Call:<a href="tel:+15122677233">(512) 267-7233</a></li>
+                        <li>Text: Text “SAFE” to <a href="sms:+17378887233">(737) 888-7233</a> visit our page
+                            for Privacy Policy, Msg & Data Rates may apply. Msg frequency may vary. Text STOP to
+                            opt out.</a></li>
+                        <li>For Deaf, DeafBlind, DeafDisabled, and Hard of Hearing people: please use relay/VRS
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>The SAFE Newsletter</h4>
+                    <form>
+                        <i class="far fa-envelope"></i>
+                        <input type="email" placeholder="Enter Email" required />
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                    <div class="social-icons">
+                        <h4>Follow Us</h4>
+                        <div class="social-links"></div>
+                        <a href="https://www.facebook.com/SAFEatx"><i class="fab fa-facebook-f"></i></a>
+                        <!--<a href="#"><i class="fab fa-facebook-f"></i></a> -->
+                        <a href="https://twitter.com/SAFEatx"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/safeatx/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/safeatx/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCibYuEbxH5Dq_upcsVCiE7A"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.tiktok.com/@safeatx?lang=en"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <div>
+                        <img src="SEAL.png" id="footer-img2">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-</div>
-<hr/>
-</footer>
-<script src="./Javascript.js"></script>
+        </div>
+        </div>
+        <hr />
+    </footer>
+    <script src="./Javascript.js"></script>

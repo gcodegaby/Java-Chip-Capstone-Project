@@ -1,11 +1,44 @@
 /*@media screen and (max-width: 700px)*/
+/*Donation Page CSS*/
 
+#donation-div {
+  display: flex;
+  gap: 20px;
+}
 
+form {
+  display: flex;
+  flex-direction: row;
+}
+.amounts {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px;
+}
+
+.donation-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  padding: 20px;
+  margin-left: 55px;
+}
+.donate-form-btn {
+  background-color: yellow;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.donation-text {
+  text-align: justify;
+  padding: 24px;
+}
 /*Gaby's Css*/
 #logo {
   height: 120px;
 }
-
 
 .topnav {
   background-color: #6495ED;
@@ -254,7 +287,7 @@ p{
  
   .methods{
     display: grid;
-    padding: 40px;
+    padding: 60px;
     margin:30px 1px;
     border-radius: 5px 5px;
     border: solid rgb(158, 140, 237);
@@ -306,18 +339,18 @@ p{
     background-color: #808080;
   }
  
-  input[type="submit"] {
+  #NL-submit {
     margin:0.8rem 0.8rem;
     padding:.5rem 0.5rem;
-    background-color: #580586;
+    background-color: #a671c2;
     color: white;
     border: none;
     border-radius: 5px;
   }
  
-  input[type="submit"]:hover {
-    background-color: #580586;
-    color:#6495ED;
+  #NL-submit:hover {
+    background-color: #c39ada;
+    color:#8e2591;
   }
 
 
@@ -429,8 +462,93 @@ p{
     align-items: center;
     justify-content: space-evenly;
 }
+/* Yaneli's Carousel CSS*/
+/* {box-sizing:border-box}
 
-/* Yaneli's CSS*/
+/* Slideshow container */
+.slideshow-container {
+  /*max-width: 1200px;*/
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.footerimg {
+  height: 600px;
+  width: 1300px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  position:absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgb(0, 0, 0, 0.5);
+  color: #f2f2f2;
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* Yaneli's Footer CSS*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 body{
@@ -750,28 +868,5 @@ body{
   }
   }
 
-  /*Donate CSS*/
-.donate-img {
-    max-width: 350px;
-    margin-left: auto;
-  }
 
-.donate {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    margin: 30px;
-  }
-
-.donate-form {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.donate-text {
-  font-size: 18px;
-  text-align: justify;
-}
+  
