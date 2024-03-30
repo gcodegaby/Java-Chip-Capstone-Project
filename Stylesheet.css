@@ -21,8 +21,9 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  max-width: 450px;
   padding: 20px;
+  margin-left: 55px;
 }
 .donate-form-btn {
   background-color: yellow;
