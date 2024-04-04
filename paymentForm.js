@@ -1,19 +1,24 @@
 let cNumber = document.getElementById('ccNum')
 const errorElement  = document.getElementById('error')
+var form = document.getElementById("donation-form");
+// document.getElementById("donate-form-btn").addEventListener("click", function () {
+//     form.submit();
+// });
 
 cNumber.addEventListener('keyup', function (e) {
     let num = cNumber.value;
+    // console.log(num);
 
     let newValue = '';
     num = num.replace(/\s/g, '');
     for (var i = 0; i < num.length; i++) {
-        if (i % 4 == 0 && i > 0) newValue = newValue.concat(' ');
+        if (i % 4 == 0 && i > 0)           newValue = newValue.concat(' ');
         newValue = newValue.concat(num[i]);
         cNumber.value = newValue;
-    }
+    
 }
 
-let ccNum = document.getElementById('c-number');
+let ccNum = document.getElementById('ccNum');
 if (num.length < 16) {
     ccNum.style.border = "1px solid red";
 } else {
@@ -21,7 +26,7 @@ if (num.length < 16) {
 }
 });
 
-form.addEventListener('submit', (e) ==> {
+form.addEventListener('submit', (e) => {
     let messages = []
     if (cNumber.value.length < 16) {
         messages.push('Valid credit card number required')
@@ -38,7 +43,3 @@ form.addEventListener('submit', (e) ==> {
 })
 
 
-var form = document.getElementById("donation-form");
-document.getElementById("donate-form-btn").addEventListener("click", function () {
-    form.submit();
-});
