@@ -20,9 +20,9 @@ cNumber.addEventListener('keyup', function (e) {
 
 let ccNum = document.getElementById('ccNum');
 if (num.length < 16) {
-    ccNum.style.border = "1px solid red";
+    ccNum.style.border = "2px solid red";
 } else {
-    ccNum.style.border = "1px solid green";
+    ccNum.style.border = "2px solid green";
 }
 });
 
