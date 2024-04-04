@@ -9,7 +9,7 @@
   gap: 20px;
 }
 
-form {
+form.donation-form {
   display: flex;
   flex-direction: row;
 }
@@ -343,7 +343,7 @@ p{
     border-radius: 10px;
   }
  
-  #submit-news {
+  #submit-news button {
     padding: 10px 20px;
     background-color: #a586b4;
     color: white;
@@ -656,7 +656,7 @@ body{
     padding-left: 8px;
   }
   
-  form {
+  .footer-col form {
     padding-bottom: 15px;
     display: flex;
     align-items: center;
@@ -668,12 +668,12 @@ body{
     color: #ffffff;
   }
   
-  form .far {
+  .footer-col form .far {
     font-size: 18px;
     margin-right: 10px;
   }
   
-  form input {
+  .footer-col form input {
     width: 100%; 
     background: transparent;
     color: #ffffff;
@@ -681,7 +681,7 @@ body{
     outline: none;
   }
   
-  form button {
+  .footer-col form button {
     background: transparent;
     border: 0;
     outline: none;
@@ -689,7 +689,7 @@ body{
   
   }
   
-  form button .fas {
+  .footer-col form button .fas {
     font-size: 16px;
     color: #ffffff;
   }
