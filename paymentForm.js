@@ -26,6 +26,26 @@ if (num.length < 16) {
 }
 });
 
+let eDate = document.getElementById('e-date');
+eDate.addEventListener('keyup', function(e) {
+    let newInput = eDate.value;
+    
+    if(e.which !== 8) {
+        var numChars = e.target.value.length;
+        if(numChars == 2){
+            var thisVal = e.target.value;
+            thisVal += '/';
+            console.log(thisVal.length)
+        }
+    }
+
+if(newInput.length<5){
+    eDate.style.border = "2px solid red";
+}else{
+    eDate.style.border = "2px solid green";
+}
+});
+
 form.addEventListener('submit', (e) => {
     let messages = []
     if (cNumber.value.length < 16) {
