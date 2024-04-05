@@ -9,7 +9,7 @@
   gap: 20px;
 }
 
-form.donation-form {
+form {
   display: flex;
   flex-direction: row;
 }
@@ -28,7 +28,7 @@ form.donation-form {
   align-items: center;
   max-width: 450px;
   padding: 20px;
-  margin: 0 auto;
+  margin-left: 55px;
 }
 .donate-form-btn {
   background-color: yellow;
@@ -39,12 +39,6 @@ form.donation-form {
 .donation-text {
   text-align: justify;
   padding: 24px;
-}
-
-.privacy-text{
-  font-size: 11px;
-  padding: 24px;
-  text-align: justify;
 }
 
 .col-50 {
@@ -333,18 +327,17 @@ p{
     flex-direction: row;
     margin: 10px 15px;
   }
-  
+ 
   input[type="text"], input[type="email"], input[type="password"] {
     width: 100%;
     max-width:400px;
     padding: 10px;
     margin-bottom: 20px;
-    border: 2px solid #903abe;
+    border: 2px solid #580586;
     border-radius: 10px;
-    background-color: transparent;
   }
-  
-  #submit-news button {
+ 
+  #submit-news {
     padding: 10px 20px;
     background-color: #a586b4;
     color: white;
@@ -424,17 +417,11 @@ p{
     font-family: 'Times New Roman', Times, serif;
 }
 
-*:disabled{
-    width:400px;
-    height:50px;
-    border: none;
-    outline: none;
-    padding-left: 25px;
-    font-weight: 500;
-    color: lightgray;
-    border-radius: 50px;
-    font-family: 'Times New Roman', Times, serif;
+select.contact-inputs:invalid{
+  color: #5C5C5C;
 }
+
+
 .contact-left textarea{
     height: 140px;
     padding-top:15px;
@@ -443,12 +430,7 @@ p{
 .contact-inputs:focus{
     border: 2px solid #580586;
 }
-/* #logo{
-    height: 120px;
-    display: flex;
-    align-items: center;
-    margin: 100px 50px;
-} */
+
 .contact-left button{
     display: flex;
     align-items: center;
@@ -657,7 +639,7 @@ body{
     padding-left: 8px;
   }
   
-  .footer-col form {
+  form {
     padding-bottom: 15px;
     display: flex;
     align-items: center;
@@ -669,12 +651,12 @@ body{
     color: #ffffff;
   }
   
-  .footer-col form .far {
+  form .far {
     font-size: 18px;
     margin-right: 10px;
   }
   
-  .footer-col form input {
+  form input {
     width: 100%; 
     background: transparent;
     color: #ffffff;
@@ -682,7 +664,7 @@ body{
     outline: none;
   }
   
-  .footer-col form button {
+  form button {
     background: transparent;
     border: 0;
     outline: none;
@@ -690,7 +672,7 @@ body{
   
   }
   
-  .footer-col form button .fas {
+  form button .fas {
     font-size: 16px;
     color: #ffffff;
   }
