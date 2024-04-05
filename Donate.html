@@ -5,6 +5,7 @@
     <title>Safe Alliance</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="Stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .about-heading {
             width: 100%;
@@ -24,8 +25,7 @@
             </a>
             <a class="nav-item" href="./Home.html">Home</a>
             <a class="nav-item" href="./About.html">About</a>
-            <a class="nav-item" href="./Contact.html">Contact</a>
-            <a class="nav-item" href="./Form.html">Form</a>
+            <a class="nav-item" href="./Form.html">Contact</a>
             <a class="nav-item" href="https://secure.livechatinc.com/licence/8371161/v2/open_chat.cgi?groups=0"
                 target="_blank">Chat</a>
             <div class="donate-btn"><a href="./Donate.html">Donate</a></div>
@@ -61,28 +61,35 @@
             <img src="https://images.pexels.com/photos/6393377/pexels-photo-6393377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="staff" class="donation-img">
             <p class="donation-text">Your gift will provide emergency shelter for children, adults, and families, and
-                    ensure 24/7 SAFEline
-                    support is available. Together, we can provide crucial support services, advocate for justice,
-                    and create safe spaces where survivors can rebuild their lives with dignity
-                    and strength. It will help fund counseling, legal services, resources for parents,
-                    wraparound support for kids, and much more.</p>
+                ensure 24/7 SAFEline
+                support is available. Together, we can provide crucial support services, advocate for justice,
+                and create safe spaces where survivors can rebuild their lives with dignity
+                and strength. It will help fund counseling, legal services, resources for parents,
+                wraparound support for kids, and much more.</p>
             <p><em>Every contribution makes a difference.
-                Donate today and be a beacon of hope for those in need.</em></p>
+                    Donate today and be a beacon of hope for those in need.</em></p>
+            <p class="privacy-text">SAFE is committed to your privacy.Your payment details will be processed by Stripe,
+                or PayPal, and a record of your donation will be stored by SAFE.
+                <br>
+                Other ways to give: Check, Bank Transfer, Stocks.
+                <br>
+                Need to reach us about your donation? <a href="Form.html">Contact us.</a>
+            </p>
+            <div>
+                <img src="SEAL.png" width="200px">
+            </div>
         </div>
-        <form role='donation_form'>
+        <form class="donation-form" method="post" action="#" id="donation-form">
             <div class="donation-container">
                 <div class="donation-box">
                     <div class="title">Donation Information</div>
                     <div class="fields">
-                        <input type="text" id="firstName" placeholder="First Name"> </input>
-                        <input type="text" id="lastName" placeholder="Last Name"> </input>
-                        <input type="text" id="email" placeholder="Email"> </input>
-                        <input type="text" id="pnumber" placeholder="Phone Number"> </input>
-                        <input type="text" id="company" placeholder="Company"> </input>
+                        <input type="text" id="firstName" placeholder="First Name">
+                        <input type="text" id="lastName" placeholder="Last Name">
+                        <input type="text" id="email" placeholder="Email">
                     </div>
                     <div class="switch">
-                        <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time"
-                            checked="">
+                        <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
                         <label for="one-time" class="switch-label switch-label-off">One-Time</label>
                         <input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
                         <label for="monthly" class="switch-label switch-label-on">Monthly</label>
@@ -102,6 +109,10 @@
                         <label for="Number">
                             <input type="radio" id="100" name="Number" value="100">$100</label>
                     </div>
+                    <div>
+                        <label for="amount">Donation amount</label>
+                        <input type="text" id="amount" name="amount" required>
+                    </div>
                     <div id="textarea-donate">
                         <label for="subject">What inspired your gift today?
                             <textarea name="the-textarea" id="the-textarea" cols="70" rows="2" maxlength="100"
@@ -110,65 +121,28 @@
                             <span id="current">0</span>
                             <span id="maximum">/ 300</span>
                         </div>
-                        <div>
-                            <label for="amount">Donation amount</label>
-                            <input type="text" id="amount" name="amount">
-                        </div>
                         <div class="col-50">
                             <h3>Payment</h3>
                             <label for="fname">Accepted Cards</label>
-                            <div class="icon-container">
-                                <i class="fa fa-cc-visa" style="color:navy;"></i>
-                                <i class="fa fa-cc-amex" style="color:blue;"></i>
-                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                                <i class="fa fa-cc-discover" style="color:orange;"></i>
-                            </div>
-                            <label for="cname">Name on Card</label>
-                            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                                <a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos" title="Credit Card Logos" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" width="413" height="59"></a>
+                            <label for="cname" class="c-number" id="c-number">Name on Card</label>
+                                <input type="text" id="cName" name="cardname" placeholder="John M. Doe" required>
                             <label for="ccnum">Credit card number</label>
-                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                            <label for="expmonth">Exp Month</label>
-                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
-                            <div class="row">
-                                <div class="col-50">
-                                    <label for="expyear">Exp Year</label>
-                                    <input type="text" id="expyear" name="expyear" placeholder="2018">
-                                </div>
-                                <div class="col-50">
-                                    <label for="cvv">CVV</label>
-                                    <input type="text" id="cvv" name="cvv" placeholder="352">
-                                </div>
-                            </div>
+                                <input type="number" id="ccNum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+                            <label for="e-date">Expiry Date</label>
+                                <input type="number" id="e-date" name="expmonth" placeholder="MM/YY" required maxlength="5" required>
+                            <label for="cvv">CVV</label>
+                                <input type="number" id="cvv" name="cvv" placeholder="352" required max-length="3" required>
                         </div>
                         <div>
-                            <button type="submit" class="donate-form-btn">
-                                <span>Donate and support</span>
-                            </button>
+                            <button type="submit" class="donate-form-btn">Donate Now</button>
                         </div>
                     </div>
                 </div>
             </div>
         </form>
     </div>
-    <!--Donation Form Code-->
-    <!-- <section class="donate" id="donate">
-    <div>
-        <p class="donate-text">Your donation can change lives. By supporting our non-profit 
-            organization, you're offering hope, healing, and a path to a brighter future for survivors. 
-            Together, we can provide crucial support services, advocate for justice, 
-            and create safe spaces where survivors can rebuild their lives with dignity 
-            and strength. Every contribution makes a difference. 
-            Donate today and be a beacon of hope for those in need.</p>
-    </div>
-    <div> 
-        <h1 style="text-align: center;">Donate Now</h1>
-    </div>
-    <div>
-        <img src="https://images.pexels.com/photos/6995106/pexels-photo-6995106.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="donate-img">
-    </div>
-</div>
-</form> -->
-    <!--Donation Form Code-->
+
     <!--Footer Code-->
     <footer class="footer">
         <div class="container">
@@ -185,12 +159,12 @@
                 <div class="footer-col">
                     <h4> The Safe Alliance </h4>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Form</a></li>
-                        <li><a href="#">Chat</a></li>
-                        <li><a href="#">Donate</a></li>
+                        <li><a href="./Home.html">Home</a></li>
+                        <li><a href="./About.html">About</a></li>
+                        <li><a href="./Form.html">Contact</a></li>
+                        <li><a href="https://secure.livechatinc.com/licence/8371161/v2/open_chat.cgi?groups=0"
+                                target="_blank">Chat</a></li>
+                        <li><a href="./Donate.html">Donate</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -231,8 +205,12 @@
         </div>
         </div>
         </div>
-        <hr />
+        <hr/>
     </footer>
+    <script src="./paymentForm.js"></script>
     <script src="./Javascript.js"></script>
-    <script> src="http://Kit.fontawesome.com/c4254e24a8.js" </script> <!-- Script Tag for Footer Social Logos-->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script> src = "http://Kit.fontawesome.com/c4254e24a8.js"</script> <!-- Script Tag for Footer Social Logos-->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </body>
+    </html>
