@@ -333,16 +333,17 @@ p{
     flex-direction: row;
     margin: 10px 15px;
   }
- 
+  
   input[type="text"], input[type="email"], input[type="password"] {
     width: 100%;
     max-width:400px;
     padding: 10px;
     margin-bottom: 20px;
-    border: 2px solid #580586;
+    border: 2px solid #903abe;
     border-radius: 10px;
+    background-color: transparent;
   }
- 
+  
   #submit-news button {
     padding: 10px 20px;
     background-color: #a586b4;
